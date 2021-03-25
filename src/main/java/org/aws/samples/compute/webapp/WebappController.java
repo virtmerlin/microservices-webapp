@@ -46,7 +46,7 @@ public class WebappController {
                     .header("x-amzn-trace-id", getTraceHeader(segment, subsegment).toString())
                     .asString()
                     .getBody();
-            logger.info("Greeting Msg is: " + greetingMessage);
+            logger.info("Greeting is: " + greetingMessage);
         } catch (Exception e) {
             logger.error("Failed connecting Greeting API: " + e);
         }
