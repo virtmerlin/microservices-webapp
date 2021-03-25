@@ -69,7 +69,7 @@ public class WebappController {
         }
         xrayRecorder.endSubsegment();
 
-        String lambdaEndpoint = "https://0pnavsn5uk.beta.execute-api.us-east-1.amazonaws.com/prod";
+        String lambdaEndpoint = "http://micro-ALBPu-1P1KK7YATG6KS-296194049.us-west-2.elb.amazonaws.com";
         try {
             String response = Unirest
                     .get(lambdaEndpoint)
